@@ -22,7 +22,7 @@ def prob(x, mu, sigma):
     return pow(np.e, expOn) / divBy
 
 # EM算法
-def EM(dataMat, maxIter=10):
+def EM(dataMat, maxIter=50):
     m, n = np.shape(dataMat)
     # 1.初始化各高斯混合成分参数
     alpha = [1 / 3, 1 / 3, 1 / 3]   # 1.1初始化 alpha1=alpha2=alpha3=1/3
